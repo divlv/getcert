@@ -3,7 +3,12 @@
 Sometimes making an HTTPS request we've got an error like this:
 
 ```
-com.sun.xml.ws.client.ClientTransportException: HTTP transport error: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+com.sun.xml.ws.client.ClientTransportException: 
+HTTP transport error: javax.net.ssl.SSLHandshakeException: 
+sun.security.validator.ValidatorException: 
+PKIX path building failed: 
+sun.security.provider.certpath.SunCertPathBuilderException: 
+unable to find valid certification path to requested target
 ```
 So, this happens because the sertificate which is used by remote host is missing in the Java's `jssecacerts` or `ecacerts` file.
 
