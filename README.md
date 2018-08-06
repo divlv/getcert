@@ -10,7 +10,7 @@ PKIX path building failed:
 sun.security.provider.certpath.SunCertPathBuilderException: 
 unable to find valid certification path to requested target
 ```
-So, this happens because the sertificate which is used by remote host is missing in the Java's `jssecacerts` or `ecacerts` file.
+So, this happens because the sertificate which is used by remote host is missing in the Java's `jssecacerts` or `cacerts` file.
 
 ### This application gets certificate from remote HTTPS host and dumps it to local file
 
