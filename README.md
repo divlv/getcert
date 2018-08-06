@@ -16,6 +16,9 @@ File `jssecacerts` will be created in the current directory.
 And your next steps could be the following:
 - Make a backup of your $JAVA_HOME/jre/lib/security/jssecacerts if any!
 - Copy just generated jssecacerts file into $JAVA_HOME/jre/lib/security folder.
+- Use your SSL/HTTPS connections
+
+Check the connection to the remote HTTPS host, using the SSLPoke tool. (see the description of the similar problem here:  https://confluence.atlassian.com/kb/unable-to-connect-to-ssl-services-due-to-pkix-path-building-failed-779355358.html) Should be OK.
 
 More information of the problem, solved with this tool can be found here: https://stackoverflow.com/questions/21076179/pkix-path-building-failed-and-unable-to-find-valid-certification-path-to-requ
     
