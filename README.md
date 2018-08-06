@@ -1,5 +1,13 @@
 # Get Certificate
-### Get certificate from remote HTTPS host and dump it to local file
+
+Sometimes making an HTTPS request we've got an error like this:
+
+```
+com.sun.xml.ws.client.ClientTransportException: HTTP transport error: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+```
+So, this happens because the sertificate which is used by remote host is missing in the Java's `jssecacerts` or `ecacerts` file.
+
+### This application gets certificate from remote HTTPS host and dumps it to local file
 
 As a result we'll have dumped certificate with all the existing certificates, installed on your Java system. 
 
